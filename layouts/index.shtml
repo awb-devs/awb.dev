@@ -1,0 +1,7 @@
+<extend template="base.shtml">
+<head id="head">
+</head>
+<body id="body">
+  <main>
+  </main>
+</body>

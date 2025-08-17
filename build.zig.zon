@@ -1,0 +1,20 @@
+.{
+    .name = .awb_dev,
+    .version = "0.0.0",
+    .fingerprint = 0x3824b698a37450c8,
+    .minimum_zig_version = "0.15.0-dev.1048+f43f89a70",
+    .dependencies = .{
+        .zine = .{
+            .url = "git+https://github.com/kristoff-it/zine#d87290eff8d42580f92444334a1de3640fb67bda",
+            .hash = "zine-0.11.0-ou6nIAqaFgACa6oCBi9kCQGBHKfw6X6qBMANoZxBBtUW",
+        },
+    },
+    .paths = .{
+        "build.zig",
+        "build.zig.zon",
+        "src",
+        // For example...
+        //"LICENSE",
+        //"README.md",
+    },
+}

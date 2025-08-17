@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html data-theme="dark">
+  <head id="head">
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1">
+    <title :text="$site.title"></title>
+    <link type="text/css" rel="stylesheet" href="$site.asset('site/style.css').link()">
+    <script defer src="$site.asset('site/themes.js').link()"></script>
+    <script defer src="$site.asset('animation/animation.js').link()"></script>
+    <super>
+  </head>
+  <body id="body">
+    <header style="position: static !important; display: block; margin: 0; padding: 0; box-shadow: none; z-index: auto;">
+      <nav>
+        <div class="nav-header">
+          <a href="$site.page('').link()">
+            <h1 class="site-title" :text="$site.title"></h1>
+          </a>
+          <div class="theme-switcher-nav">
+            <label class="switch" for="theme-toggle">
+              <input type="checkbox" id="theme-toggle">
+              <span class="slider"></span>
+            </label>
+          </div>
+        </div>
+        <div class="nav-body">
+          <ul class="nav-links">
+            <a href="https://www.github.com/awb-devs">github</a>
+             &nbsp; • &nbsp;
+            <a href="https://www.linkedin.com/in/aidan-bouchey/">linkedin</a>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <super>
+    <footer>
+      <canvas id="canvas" style="width: 100vw; height: 85vh"></canvas>
+    </footer>
+  </body>
+</html>
